@@ -57,9 +57,9 @@
                     <dc-element>contributor</dc-element>
                     <dc-qualifier>author</dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Operation Name</label>
+                    <label>Author</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the Operation Name</hint>
+                    <hint>Enter the author's name (Family name, Given names).</hint>
                     <required></required>
                 </field>
             </row>
@@ -102,7 +102,7 @@
                     <required>You must enter at least the year.</required>
                 </field>
 
-                <!-- <field>
+                <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>publisher</dc-element>
                     <dc-qualifier></dc-qualifier>
@@ -112,9 +112,9 @@
                     <input-type>onebox</input-type>
                     <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
                     <required></required>
-                </field> -->
+                </field>
             </row>
-            <!-- <row>
+            <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
@@ -125,8 +125,8 @@
                     <hint>Enter the standard citation for the previously issued instance of this item.</hint>
                     <required></required>
                 </field>
-            </row> -->
-            <!-- <row>
+            </row>
+            <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>relation</dc-element>
@@ -137,12 +137,13 @@
                     <hint>Enter the series and number assigned to this item by your community.</hint>
                     <required></required>
                 </field>
-            </row> -->
-            <!-- <row>
+            </row>
+            <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
                     <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
                     <repeatable>true</repeatable>
                     <label>Identifiers</label>
                     <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
@@ -179,7 +180,7 @@
                     </hint>
                     <required></required>
                 </field>
-            </row> -->
+            </row>
         </form>
 
         <!-- Form which defines the second page/section of the "traditional" DSpace submission process,
@@ -192,14 +193,14 @@
                     <dc-qualifier></dc-qualifier>
                     <!-- An input-type of tag MUST be marked as repeatable -->
                     <repeatable>true</repeatable>
-                    <label>Drawing number</label>
+                    <label>Subject Keywords</label>
                     <input-type>tag</input-type>
-                    <hint>Enter appropriate Drawing number</hint>
+                    <hint>Enter appropriate subject keywords or phrases.</hint>
                     <required></required>
                     <vocabulary>srsc</vocabulary>
                 </field>
             </row>
-            <!-- <row>
+            <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
@@ -234,7 +235,7 @@
                     <hint>Enter any other description or comments in this box.</hint>
                     <required></required>
                 </field>
-            </row> -->
+            </row>
         </form>
 
 
@@ -1143,7 +1144,7 @@
                     <required></required>
                 </field>
             </row>
-            <!-- <row>
+            <row>
                 <field>
                     <dc-schema>oaire</dc-schema>
                     <dc-element>license</dc-element>
@@ -1154,7 +1155,7 @@
                     <hint>Select the license of the resource.</hint>
                     <required></required>
                 </field>
-            </row> -->
+            </row>
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
